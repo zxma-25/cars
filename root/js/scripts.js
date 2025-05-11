@@ -41,6 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Function to navigate to a page
+    function navigateToPage() {
+        const dropdown = document.getElementById('brand-dropdown');
+        const selectedPage = dropdown.value;
+        if (selectedPage) {
+            window.location.href = selectedPage;
+        }
+    }
+
     // Initialize the car list on page load
     displayCarList();
 });
