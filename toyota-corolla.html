@@ -5,6 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toyota Corolla</title>
     <link rel="stylesheet" href="root/css/styles.css">
+    <style>
+        /* Dark mode styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+        }
+
+        h1, h2 {
+            color: #ffffff;
+        }
+
+        img {
+            border: 2px solid #ffffff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background-color: #1e1e1e;
+        }
+
+        th {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 0.5rem;
+            border: 1px solid #444444;
+        }
+
+        td {
+            padding: 0.5rem;
+            border: 1px solid #444444;
+        }
+
+        /* Alternating row colors */
+        tbody tr:nth-child(odd) {
+            background-color: #2c2c2c;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #3a3a3a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,39 +76,39 @@
         </section>
         <section>
             <h2>Toyota Corolla Trims and Specifications</h2>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+            <table>
                 <thead>
-                    <tr style="background-color: #f4f4f4;">
-                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Trim</th>
-                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Engine</th>
-                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Horsepower</th>
-                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Mileage (L/100km)</th>
+                    <tr>
+                        <th>Trim</th>
+                        <th>Engine</th>
+                        <th>Horsepower</th>
+                        <th>Mileage (L/100km)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">L</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1.8L 4-Cylinder</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">139 hp</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">7.1</td>
+                        <td>L</td>
+                        <td>1.8L 4-Cylinder</td>
+                        <td>139 hp</td>
+                        <td>7.1</td>
                     </tr>
                     <tr>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">LE</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1.8L 4-Cylinder</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">139 hp</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">6.9</td>
+                        <td>LE</td>
+                        <td>1.8L 4-Cylinder</td>
+                        <td>139 hp</td>
+                        <td>6.9</td>
                     </tr>
                     <tr>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">SE</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">2.0L 4-Cylinder</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">169 hp</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">6.5</td>
+                        <td>SE</td>
+                        <td>2.0L 4-Cylinder</td>
+                        <td>169 hp</td>
+                        <td>6.5</td>
                     </tr>
                     <tr>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">XSE</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">2.0L 4-Cylinder</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">169 hp</td>
-                        <td style="padding: 0.5rem; border: 1px solid #ddd;">6.3</td>
+                        <td>XSE</td>
+                        <td>2.0L 4-Cylinder</td>
+                        <td>169 hp</td>
+                        <td>6.3</td>
                     </tr>
                 </tbody>
             </table>
