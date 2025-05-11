@@ -69,6 +69,23 @@
             background-color: #1e1e1e;
             color: #ffffff;
         }
+
+        .back-button {
+            display: inline-block;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -76,6 +93,7 @@
         <h1>Toyota Corolla</h1>
     </header>
     <main>
+        <a class="back-button" onclick="history.back()">← Back</a>
         <section>
             <img src="root/images/corolla.png" alt="Toyota Corolla" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;">
             <p>The Toyota Corolla is a compact car known for its reliability and fuel efficiency.</p>

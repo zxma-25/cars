@@ -69,6 +69,23 @@
             background-color: #1e1e1e;
             color: #ffffff;
         }
+
+        .back-button {
+            display: inline-block;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -76,6 +93,7 @@
         <h1>Ford Mustang</h1>
     </header>
     <main>
+        <a class="back-button" onclick="history.back()">← Back</a>
         <section>
             <img src="root/images/mustang.png" alt="Ford Mustang" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;">
             <p>The Ford Mustang is an iconic sports car known for its performance, style, and heritage.</p>
