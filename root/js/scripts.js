@@ -1,5 +1,7 @@
 // This file contains JavaScript code for interactivity on the website, such as fetching car data, handling user interactions, and updating the UI dynamically.
 
+console.log("scripts.js loaded");
+
 document.addEventListener('DOMContentLoaded', () => {
     const carList = document.getElementById('car-list');
     const carDetails = document.getElementById('car-details');
@@ -45,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function navigateToPage() {
         const dropdown = document.getElementById('brand-dropdown');
         const selectedPage = dropdown.value;
+        console.log("Navigating to:", selectedPage); // Debugging output
         if (selectedPage) {
             window.location.href = selectedPage;
         }
