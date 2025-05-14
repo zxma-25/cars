@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plymouth Cars</title>
+    <link rel="stylesheet" href="root/css/styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .notice {
+            color: #ffcc00;
+            background: #333;
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1.5rem auto 2rem auto;
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        #cars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+        .car-tile {
+            display: block;
+            width: 180px;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        .car-tile button {
+            width: 100%;
+            border: none;
+            background: #1e1e1e;
+            color: #f0f0f0;
+            border-radius: 8px;
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .car-tile button:hover {
+            background: #007bff;
+        }
+        .car-tile img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0.5rem;
+            height: 100px;
+            object-fit: cover;
+            background: #222;
+        }
+        .car-tile span {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-bottom: 0.5rem;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plymouth Cars</h1>
+    </header>
+    <main>
+        <a class="back-button" onclick="history.back()">← Back</a>
+        <div class="notice">
+            <strong>Note:</strong> Plymouth is a discontinued brand and no longer manufactures cars. The following are some of its most iconic models.
+        </div>
+        <div id="cars">
+            <a href="plymouth-barracuda.html" class="car-tile">
+                <button>
+                    <img src="root/images/barracuda.png" alt="Plymouth Barracuda">
+                    <span>Plymouth Barracuda</span>
+                </button>
+            </a>
+            <a href="plymouth-road-runner.html" class="car-tile">
+                <button>
+                    <img src="root/images/road-runner.png" alt="Plymouth Road Runner">
+                    <span>Plymouth Road Runner</span>
+                </button>
+            </a>
+            <a href="plymouth-gtx.html" class="car-tile">
+                <button>
+                    <img src="root/images/gtx.png" alt="Plymouth GTX">
+                    <span>Plymouth GTX</span>
+                </button>
+            </a>
+            <a href="plymouth-fury.html" class="car-tile">
+                <button>
+                    <img src="root/images/fury.png" alt="Plymouth Fury">
+                    <span>Plymouth Fury</span>
+                </button>
+            </a>
+            <a href="plymouth-duster.html" class="car-tile">
+                <button>
+                    <img src="root/images/duster.png" alt="Plymouth Duster">
+                    <span>Plymouth Duster</span>
+                </button>
+            </a>
+            <a href="plymouth-superbird.html" class="car-tile">
+                <button>
+                    <img src="root/images/superbird.png" alt="Plymouth Superbird">
+                    <span>Plymouth Superbird</span>
+                </button>
+            </a>
+            <a href="plymouth-volare.html" class="car-tile">
+                <button>
+                    <img src="root/images/volare.png" alt="Plymouth Volaré">
+                    <span>Plymouth Volaré</span>
+                </button>
+            </a>
+            <a href="plymouth-prowler.html" class="car-tile">
+                <button>
+                    <img src="root/images/prowler.png" alt="Plymouth Prowler">
+                    <span>Plymouth Prowler</span>
+                </button>
+            </a>
+            <a href="plymouth-satellite.html" class="car-tile">
+                <button>
+                    <img src="root/images/satellite.png" alt="Plymouth Satellite">
+                    <span>Plymouth Satellite</span>
+                </button>
+            </a>
+            <a href="plymouth-belvedere.html" class="car-tile">
+                <button>
+                    <img src="root/images/belvedere.png" alt="Plymouth Belvedere">
+                    <span>Plymouth Belvedere</span>
+                </button>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Browsing App</p>
+    </footer>
+</body>
+</html>
