@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz Cars</title>
+    <link rel="stylesheet" href="root/css/styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        #cars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+        .car-tile {
+            display: block;
+            width: 180px;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        .car-tile button {
+            width: 100%;
+            border: none;
+            background: #1e1e1e;
+            color: #f0f0f0;
+            border-radius: 8px;
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .car-tile button:hover {
+            background: #007bff;
+        }
+        .car-tile img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0.5rem;
+            height: 100px;
+            object-fit: cover;
+            background: #222;
+        }
+        .car-tile span {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-bottom: 0.5rem;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="root/images/mercedes-logo.png" alt="Mercedes-Benz Logo" style="height:60px; margin-bottom:0.5rem;">
+        <h1>Mercedes-Benz Cars</h1>
+    </header>
+    <main>
+        <a class="back-button" onclick="history.back()">← Back</a>
+        <div id="cars">
+            <a href="mercedes-c-class.html" class="car-tile">
+                <button>
+                    <img src="root/images/c-class.png" alt="Mercedes-Benz C-Class">
+                    <span>Mercedes-Benz C-Class</span>
+                </button>
+            </a>
+            <a href="mercedes-e-class.html" class="car-tile">
+                <button>
+                    <img src="root/images/e-class.png" alt="Mercedes-Benz E-Class">
+                    <span>Mercedes-Benz E-Class</span>
+                </button>
+            </a>
+            <a href="mercedes-s-class.html" class="car-tile">
+                <button>
+                    <img src="root/images/s-class.png" alt="Mercedes-Benz S-Class">
+                    <span>Mercedes-Benz S-Class</span>
+                </button>
+            </a>
+            <a href="mercedes-glc.html" class="car-tile">
+                <button>
+                    <img src="root/images/glc.png" alt="Mercedes-Benz GLC">
+                    <span>Mercedes-Benz GLC</span>
+                </button>
+            </a>
+            <a href="mercedes-gla.html" class="car-tile">
+                <button>
+                    <img src="root/images/gla.png" alt="Mercedes-Benz GLA">
+                    <span>Mercedes-Benz GLA</span>
+                </button>
+            </a>
+            <a href="mercedes-gls.html" class="car-tile">
+                <button>
+                    <img src="root/images/gls.png" alt="Mercedes-Benz GLS">
+                    <span>Mercedes-Benz GLS</span>
+                </button>
+            </a>
+            <a href="mercedes-a-class.html" class="car-tile">
+                <button>
+                    <img src="root/images/a-class.png" alt="Mercedes-Benz A-Class">
+                    <span>Mercedes-Benz A-Class</span>
+                </button>
+            </a>
+            <a href="mercedes-g-class.html" class="car-tile">
+                <button>
+                    <img src="root/images/g-class.png" alt="Mercedes-Benz G-Class">
+                    <span>Mercedes-Benz G-Class</span>
+                </button>
+            </a>
+            <a href="mercedes-amg-gt.html" class="car-tile">
+                <button>
+                    <img src="root/images/amg-gt.png" alt="Mercedes-AMG GT">
+                    <span>Mercedes-AMG GT</span>
+                </button>
+            </a>
+            <a href="mercedes-eqc.html" class="car-tile">
+                <button>
+                    <img src="root/images/eqc.png" alt="Mercedes-Benz EQC">
+                    <span>Mercedes-Benz EQC</span>
+                </button>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Browsing App</p>
+    </footer>
+</body>
+</html>
