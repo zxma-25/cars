@@ -21,22 +21,51 @@
         h1 {
             color: #ffffff;
         }
-        ul {
-            max-width: 600px;
-            margin: 2rem auto;
-            background: #1e1e1e;
-            border-radius: 8px;
-            padding: 2rem;
-            list-style: none;
-        }
-        li {
+        #cars {
             display: flex;
-            align-items: center;
-            border-bottom: 1px solid #333;
-            padding: 0.75rem 0;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem auto;
+            max-width: 900px;
         }
-        li:last-child {
-            border-bottom: none;
+        .car-tile {
+            display: block;
+            width: 180px;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        .car-tile button {
+            width: 100%;
+            border: none;
+            background: #1e1e1e;
+            color: #f0f0f0;
+            border-radius: 8px;
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .car-tile button:hover {
+            background: #007bff;
+        }
+        .car-tile img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0.5rem;
+            height: 100px;
+            object-fit: cover;
+            background: #222;
+        }
+        .car-tile span {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem 0.25rem;
         }
         .back-button {
             display: inline-block;
@@ -53,20 +82,6 @@
         .back-button:hover {
             background-color: #0056b3;
         }
-        .car-link {
-            color: #cccccc;
-            text-decoration: none;
-            font-size: 1.1rem;
-            vertical-align: middle;
-            transition: color 0.2s, background 0.2s;
-            border-radius: 4px;
-            padding: 0.5rem 0.5rem;
-        }
-        .car-link:hover {
-            color: #ffffff;
-            background: #007bff;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
@@ -75,88 +90,128 @@
     </header>
     <main>
         <a class="back-button" onclick="history.back()">← Back</a>
-        <ul>
-            <li>
-                <img src="root/images/civic.png" alt="Honda Civic" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-civic.html" class="car-link">Honda Civic</a>
-            </li>
-            <li>
-                <img src="root/images/accord.png" alt="Honda Accord" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-accord.html" class="car-link">Honda Accord</a>
-            </li>
-            <li>
-                <img src="root/images/crv.png" alt="Honda CR-V" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-crv.html" class="car-link">Honda CR-V</a>
-            </li>
-            <li>
-                <img src="root/images/hrv.png" alt="Honda HR-V" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-hrv.html" class="car-link">Honda HR-V</a>
-            </li>
-            <li>
-                <img src="root/images/fit.png" alt="Honda Fit (Jazz)" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-fit.html" class="car-link">Honda Fit (Jazz)</a>
-            </li>
-            <li>
-                <img src="root/images/pilot.png" alt="Honda Pilot" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-pilot.html" class="car-link">Honda Pilot</a>
-            </li>
-            <li>
-                <img src="root/images/odyssey.png" alt="Honda Odyssey" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-odyssey.html" class="car-link">Honda Odyssey</a>
-            </li>
-            <li>
-                <img src="root/images/ridgeline.png" alt="Honda Ridgeline" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-ridgeline.html" class="car-link">Honda Ridgeline</a>
-            </li>
-            <li>
-                <img src="root/images/insight.png" alt="Honda Insight" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-insight.html" class="car-link">Honda Insight</a>
-            </li>
-            <li>
-                <img src="root/images/passport.png" alt="Honda Passport" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-passport.html" class="car-link">Honda Passport</a>
-            </li>
-            <li>
-                <img src="root/images/element.png" alt="Honda Element" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-element.html" class="car-link">Honda Element</a>
-            </li>
-            <li>
-                <img src="root/images/prelude.png" alt="Honda Prelude" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-prelude.html" class="car-link">Honda Prelude</a>
-            </li>
-            <li>
-                <img src="root/images/s2000.png" alt="Honda S2000" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-s2000.html" class="car-link">Honda S2000</a>
-            </li>
-            <li>
-                <img src="root/images/crosstour.png" alt="Honda Crosstour" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-crosstour.html" class="car-link">Honda Crosstour</a>
-            </li>
-            <li>
-                <img src="root/images/clarity.png" alt="Honda Clarity" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-clarity.html" class="car-link">Honda Clarity</a>
-            </li>
-            <li>
-                <img src="root/images/crz.png" alt="Honda CR-Z" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-crz.html" class="car-link">Honda CR-Z</a>
-            </li>
-            <li>
-                <img src="root/images/city.png" alt="Honda City" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-city.html" class="car-link">Honda City</a>
-            </li>
-            <li>
-                <img src="root/images/brio.png" alt="Honda Brio" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-brio.html" class="car-link">Honda Brio</a>
-            </li>
-            <li>
-                <img src="root/images/stream.png" alt="Honda Stream" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-stream.html" class="car-link">Honda Stream</a>
-            </li>
-            <li>
-                <img src="root/images/freed.png" alt="Honda Freed" style="width:60px; vertical-align:middle; border-radius:6px; margin-right:1rem;">
-                <a href="honda-freed.html" class="car-link">Honda Freed</a>
-            </li>
-        </ul>
+        <div id="cars">
+            <a href="honda-civic.html" class="car-tile">
+                <button>
+                    <img src="root/images/civic.png" alt="Honda Civic">
+                    <span>Honda Civic</span>
+                </button>
+            </a>
+            <a href="honda-accord.html" class="car-tile">
+                <button>
+                    <img src="root/images/accord.png" alt="Honda Accord">
+                    <span>Honda Accord</span>
+                </button>
+            </a>
+            <a href="honda-crv.html" class="car-tile">
+                <button>
+                    <img src="root/images/crv.png" alt="Honda CR-V">
+                    <span>Honda CR-V</span>
+                </button>
+            </a>
+            <a href="honda-hrv.html" class="car-tile">
+                <button>
+                    <img src="root/images/hrv.png" alt="Honda HR-V">
+                    <span>Honda HR-V</span>
+                </button>
+            </a>
+            <a href="honda-fit.html" class="car-tile">
+                <button>
+                    <img src="root/images/fit.png" alt="Honda Fit (Jazz)">
+                    <span>Honda Fit (Jazz)</span>
+                </button>
+            </a>
+            <a href="honda-pilot.html" class="car-tile">
+                <button>
+                    <img src="root/images/pilot.png" alt="Honda Pilot">
+                    <span>Honda Pilot</span>
+                </button>
+            </a>
+            <a href="honda-odyssey.html" class="car-tile">
+                <button>
+                    <img src="root/images/odyssey.png" alt="Honda Odyssey">
+                    <span>Honda Odyssey</span>
+                </button>
+            </a>
+            <a href="honda-ridgeline.html" class="car-tile">
+                <button>
+                    <img src="root/images/ridgeline.png" alt="Honda Ridgeline">
+                    <span>Honda Ridgeline</span>
+                </button>
+            </a>
+            <a href="honda-insight.html" class="car-tile">
+                <button>
+                    <img src="root/images/insight.png" alt="Honda Insight">
+                    <span>Honda Insight</span>
+                </button>
+            </a>
+            <a href="honda-passport.html" class="car-tile">
+                <button>
+                    <img src="root/images/passport.png" alt="Honda Passport">
+                    <span>Honda Passport</span>
+                </button>
+            </a>
+            <a href="honda-element.html" class="car-tile">
+                <button>
+                    <img src="root/images/element.png" alt="Honda Element">
+                    <span>Honda Element</span>
+                </button>
+            </a>
+            <a href="honda-prelude.html" class="car-tile">
+                <button>
+                    <img src="root/images/prelude.png" alt="Honda Prelude">
+                    <span>Honda Prelude</span>
+                </button>
+            </a>
+            <a href="honda-s2000.html" class="car-tile">
+                <button>
+                    <img src="root/images/s2000.png" alt="Honda S2000">
+                    <span>Honda S2000</span>
+                </button>
+            </a>
+            <a href="honda-crosstour.html" class="car-tile">
+                <button>
+                    <img src="root/images/crosstour.png" alt="Honda Crosstour">
+                    <span>Honda Crosstour</span>
+                </button>
+            </a>
+            <a href="honda-clarity.html" class="car-tile">
+                <button>
+                    <img src="root/images/clarity.png" alt="Honda Clarity">
+                    <span>Honda Clarity</span>
+                </button>
+            </a>
+            <a href="honda-crz.html" class="car-tile">
+                <button>
+                    <img src="root/images/crz.png" alt="Honda CR-Z">
+                    <span>Honda CR-Z</span>
+                </button>
+            </a>
+            <a href="honda-city.html" class="car-tile">
+                <button>
+                    <img src="root/images/city.png" alt="Honda City">
+                    <span>Honda City</span>
+                </button>
+            </a>
+            <a href="honda-brio.html" class="car-tile">
+                <button>
+                    <img src="root/images/brio.png" alt="Honda Brio">
+                    <span>Honda Brio</span>
+                </button>
+            </a>
+            <a href="honda-stream.html" class="car-tile">
+                <button>
+                    <img src="root/images/stream.png" alt="Honda Stream">
+                    <span>Honda Stream</span>
+                </button>
+            </a>
+            <a href="honda-freed.html" class="car-tile">
+                <button>
+                    <img src="root/images/freed.png" alt="Honda Freed">
+                    <span>Honda Freed</span>
+                </button>
+            </a>
+        </div>
     </main>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla Cars</title>
+    <title>Mopar Brands</title>
     <link rel="stylesheet" href="root/css/styles.css">
     <style>
         body {
@@ -21,21 +21,21 @@
         h1 {
             color: #ffffff;
         }
-        #cars {
+        #brands {
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
             justify-content: center;
             margin: 2rem auto;
-            max-width: 900px;
+            max-width: 700px;
         }
-        .car-tile {
+        .brand-tile {
             display: block;
             width: 180px;
             text-decoration: none;
             margin-bottom: 1rem;
         }
-        .car-tile button {
+        .brand-tile button {
             width: 100%;
             border: none;
             background: #1e1e1e;
@@ -48,10 +48,10 @@
             flex-direction: column;
             align-items: center;
         }
-        .car-tile button:hover {
+        .brand-tile button:hover {
             background: #007bff;
         }
-        .car-tile img {
+        .brand-tile img {
             width: 100%;
             border-radius: 8px 8px 0 0;
             margin-bottom: 0.5rem;
@@ -59,7 +59,7 @@
             object-fit: cover;
             background: #222;
         }
-        .car-tile span {
+        .brand-tile span {
             display: block;
             text-align: center;
             font-weight: bold;
@@ -86,51 +86,27 @@
 </head>
 <body>
     <header>
-        <h1>Tesla Cars</h1>
+        <h1>Mopar Brands</h1>
     </header>
     <main>
         <a class="back-button" onclick="history.back()">← Back</a>
-        <div id="cars">
-            <a href="tesla-model-s.html" class="car-tile">
+        <div id="brands">
+            <a href="dodge.html" class="brand-tile">
                 <button>
-                    <img src="root/images/model-s.png" alt="Tesla Model S">
-                    <span>Tesla Model S</span>
+                    <img src="root/images/dodge.png" alt="Dodge">
+                    <span>Dodge</span>
                 </button>
             </a>
-            <a href="tesla-model-3.html" class="car-tile">
+            <a href="chrysler.html" class="brand-tile">
                 <button>
-                    <img src="root/images/model-3.png" alt="Tesla Model 3">
-                    <span>Tesla Model 3</span>
+                    <img src="root/images/chrysler.png" alt="Chrysler">
+                    <span>Chrysler</span>
                 </button>
             </a>
-            <a href="tesla-model-x.html" class="car-tile">
+            <a href="plymouth.html" class="brand-tile">
                 <button>
-                    <img src="root/images/model-x.png" alt="Tesla Model X">
-                    <span>Tesla Model X</span>
-                </button>
-            </a>
-            <a href="tesla-model-y.html" class="car-tile">
-                <button>
-                    <img src="root/images/model-y.png" alt="Tesla Model Y">
-                    <span>Tesla Model Y</span>
-                </button>
-            </a>
-            <a href="tesla-cybertruck.html" class="car-tile">
-                <button>
-                    <img src="root/images/cybertruck.png" alt="Tesla Cybertruck">
-                    <span>Tesla Cybertruck</span>
-                </button>
-            </a>
-            <a href="tesla-roadster.html" class="car-tile">
-                <button>
-                    <img src="root/images/roadster.png" alt="Tesla Roadster">
-                    <span>Tesla Roadster</span>
-                </button>
-            </a>
-            <a href="tesla-semi.html" class="car-tile">
-                <button>
-                    <img src="root/images/semi.png" alt="Tesla Semi">
-                    <span>Tesla Semi</span>
+                    <img src="root/images/plymouth.png" alt="Plymouth">
+                    <span>Plymouth</span>
                 </button>
             </a>
         </div>
