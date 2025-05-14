@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrysler Cars</title>
+    <link rel="stylesheet" href="root/css/styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        #cars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+        .car-tile {
+            display: block;
+            width: 180px;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        .car-tile button {
+            width: 100%;
+            border: none;
+            background: #1e1e1e;
+            color: #f0f0f0;
+            border-radius: 8px;
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .car-tile button:hover {
+            background: #007bff;
+        }
+        .car-tile img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0.5rem;
+            height: 100px;
+            object-fit: cover;
+            background: #222;
+        }
+        .car-tile span {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-bottom: 0.5rem;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chrysler Cars</h1>
+    </header>
+    <main>
+        <a class="back-button" onclick="history.back()">← Back</a>
+        <div id="cars">
+            <a href="chrysler-300.html" class="car-tile">
+                <button>
+                    <img src="root/images/chrysler-300.png" alt="Chrysler 300">
+                    <span>Chrysler 300</span>
+                </button>
+            </a>
+            <a href="chrysler-pacifica.html" class="car-tile">
+                <button>
+                    <img src="root/images/pacifica.png" alt="Chrysler Pacifica">
+                    <span>Chrysler Pacifica</span>
+                </button>
+            </a>
+            <a href="chrysler-voyager.html" class="car-tile">
+                <button>
+                    <img src="root/images/voyager.png" alt="Chrysler Voyager">
+                    <span>Chrysler Voyager</span>
+                </button>
+            </a>
+            <a href="chrysler-aspen.html" class="car-tile">
+                <button>
+                    <img src="root/images/aspen.png" alt="Chrysler Aspen">
+                    <span>Chrysler Aspen</span>
+                </button>
+            </a>
+            <a href="chrysler-ptcruiser.html" class="car-tile">
+                <button>
+                    <img src="root/images/ptcruiser.png" alt="Chrysler PT Cruiser">
+                    <span>Chrysler PT Cruiser</span>
+                </button>
+            </a>
+            <a href="chrysler-sebring.html" class="car-tile">
+                <button>
+                    <img src="root/images/sebring.png" alt="Chrysler Sebring">
+                    <span>Chrysler Sebring</span>
+                </button>
+            </a>
+            <a href="chrysler-crossfire.html" class="car-tile">
+                <button>
+                    <img src="root/images/crossfire.png" alt="Chrysler Crossfire">
+                    <span>Chrysler Crossfire</span>
+                </button>
+            </a>
+            <a href="chrysler-concorde.html" class="car-tile">
+                <button>
+                    <img src="root/images/concorde.png" alt="Chrysler Concorde">
+                    <span>Chrysler Concorde</span>
+                </button>
+            </a>
+            <a href="chrysler-lhs.html" class="car-tile">
+                <button>
+                    <img src="root/images/lhs.png" alt="Chrysler LHS">
+                    <span>Chrysler LHS</span>
+                </button>
+            </a>
+            <a href="chrysler-newyorker.html" class="car-tile">
+                <button>
+                    <img src="root/images/newyorker.png" alt="Chrysler New Yorker">
+                    <span>Chrysler New Yorker</span>
+                </button>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Browsing App</p>
+    </footer>
+</body>
+</html>
