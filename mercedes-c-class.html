@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz C-Class</title>
+    <link rel="stylesheet" href="root/css/styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .brand-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #007bff;
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+        .highlight {
+            background: #222;
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin: 1.5rem auto 2rem auto;
+            max-width: 700px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+        #models {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+        .model-tile {
+            display: block;
+            width: 180px;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        .model-tile button {
+            width: 100%;
+            border: none;
+            background: #1e1e1e;
+            color: #f0f0f0;
+            border-radius: 8px;
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .model-tile button:hover {
+            background: #007bff;
+        }
+        .model-tile img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0.5rem;
+            height: 100px;
+            object-fit: cover;
+            background: #222;
+        }
+        .model-tile span {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-bottom: 0.5rem;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="root/images/mercedes/mercedes-logo.png" alt="Mercedes-Benz Logo" style="height:60px; margin-bottom:0.5rem;">
+        <h1>Mercedes-Benz C-Class</h1>
+        <a href="mercedes.html" class="brand-link">
+            ← Back to Mercedes-Benz Brand Page
+        </a>
+    </header>
+    <main>
+        <a class="back-button" onclick="history.back()">← Back</a>
+        <section>
+            <img src="root/images/mercedes/c-class.png" alt="Mercedes-Benz C-Class" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;">
+            <div class="highlight">
+                The Mercedes-Benz C-Class is the brand's compact executive car, positioned between the entry-level A-Class and the larger E-Class. Known for its blend of luxury, technology, and sporty driving dynamics, the C-Class is one of Mercedes-Benz's most popular and versatile models, available in sedan, coupe, convertible, and wagon body styles.
+            </div>
+        </section>
+        <section>
+            <h2>Famous Mercedes-Benz C-Class Models</h2>
+            <div id="models">
+                <a href="mercedes-c-class-w201.html" class="model-tile">
+                    <button>
+                        <img src="root/images/mercedes/w201.png" alt="Mercedes-Benz 190E (W201)">
+                        <span>190E (W201)</span>
+                    </button>
+                </a>
+                <a href="mercedes-c-class-w202.html" class="model-tile">
+                    <button>
+                        <img src="root/images/mercedes/w202.png" alt="C-Class (W202)">
+                        <span>C-Class (W202)</span>
+                    </button>
+                </a>
+                <a href="mercedes-c-class-w203.html" class="model-tile">
+                    <button>
+                        <img src="root/images/mercedes/w203.png" alt="C-Class (W203)">
+                        <span>C-Class (W203)</span>
+                    </button>
+                </a>
+                <a href="mercedes-c-class-w204.html" class="model-tile">
+                    <button>
+                        <img src="root/images/mercedes/w204.png" alt="C-Class (W204)">
+                        <span>C-Class (W204)</span>
+                    </button>
+                </a>
+                <a href="mercedes-c-class-w205.html" class="model-tile">
+                    <button>
+                        <img src="root/images/mercedes/w205.png" alt="C-Class (W205)">
+                        <span>C-Class (W205)</span>
+                    </button>
+                </a>
+                <a href="mercedes-c-class-w206.html" class="model-tile">
+                    <button>
+                        <img src="root/images/mercedes/w206.png" alt="C-Class (W206)">
+                        <span>C-Class (W206)</span>
+                    </button>
+                </a>
+                <a href="mercedes-c63-amg.html" class="model-tile">
+                    <button>
+                        <img src="root/images/mercedes/c63-amg.png" alt="C63 AMG">
+                        <span>C63 AMG</span>
+                    </button>
+                </a>
+                <a href="mercedes-c43-amg.html" class="model-tile">
+                    <button>
+                        <img src="root/images/mercedes/c43-amg.png" alt="C43 AMG">
+                        <span>C43 AMG</span>
+                    </button>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Browsing App</p>
+    </footer>
+</body>
+</html>
